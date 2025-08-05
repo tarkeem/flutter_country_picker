@@ -63,7 +63,7 @@ Widget _builder(
   CustomFlagBuilder? customFlagBuilder,
   Widget header,
 ) {
-  final device = MediaQuery.of(context).size.height;
+  final device = MediaQuery.of(context).size.height/2;
   final statusBarHeight = MediaQuery.of(context).padding.top;
   final height = countryListTheme?.bottomSheetHeight ??
       device - (statusBarHeight + (kToolbarHeight / 1.5));
